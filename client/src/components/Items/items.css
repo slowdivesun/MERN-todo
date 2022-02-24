@@ -1,0 +1,29 @@
+.itemsWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.itemContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.removeBtn {
+  margin-bottom: 5px;
+  border: 0;
+  background-color: rgb(113, 169, 199);
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.items {
+  margin-top: 10px;
+}
+
+.itemsWrapper > * {
+  margin: 10px;
+}

@@ -1,0 +1,25 @@
+.itemWrapperDone {
+  border: 1px solid red;
+  background-color: rgb(193, 125, 125);
+  cursor: pointer;
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: line-through;
+  padding: 25px 3px;
+  margin-bottom: 5px;
+}
+
+.itemWrapperPending {
+  border: 1px solid green;
+  background-color: rgb(157, 203, 157);
+
+  cursor: pointer;
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 3px;
+  margin-bottom: 5px;
+}
