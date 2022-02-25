@@ -41,5 +41,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://mern-todo-backend.vercel.app/"
+  "proxy": "https://mern-todo-backend.vercel.app"
 }
