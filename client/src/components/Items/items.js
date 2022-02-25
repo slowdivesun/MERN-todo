@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { getTodos } from "../../actions/todo";
@@ -9,7 +9,7 @@ const Items = ({ getTodos, todo: { todos } }) => {
   const [separate, setSeparate] = useState(false);
   useEffect(() => {
     getTodos();
-  }, []);
+  }, [getTodos]);
 
   return (
     <div className='itemContainer'>

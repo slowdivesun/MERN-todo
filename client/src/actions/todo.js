@@ -41,6 +41,7 @@ export const getTodos = () => async (dispatch) => {
 export const changeStatus = (id) => async (dispatch) => {
   try {
     const res = await axios.put(`/api/todos/${id}`);
+    console.log(res);
 
     dispatch({
       type: "CHANGE_STATUS",
