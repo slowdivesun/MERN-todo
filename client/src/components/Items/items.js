@@ -19,7 +19,7 @@ const Items = ({ getTodos, todo: { todos } }) => {
       <div className='itemsWrapper'>
         <div className='items'>
           {separate && <h4>Incomplete tasks</h4>}
-          {todos.map((t) => {
+          {todos?.map((t) => {
             if (t.status === false) {
               return <Item key={t._id} todo={t} />;
             } else {
@@ -27,6 +27,7 @@ const Items = ({ getTodos, todo: { todos } }) => {
                 return <Item key={t._id} todo={t} />;
               }
             }
+            return null;
           })}
         </div>
         <div className='itemsCompleted'>
