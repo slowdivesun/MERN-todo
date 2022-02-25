@@ -12,7 +12,11 @@ export const addTodo = (title) => async (dispatch) => {
   const body = { title };
 
   try {
-    const res = await axios.post("/api/todos", body, config);
+    const res = await axios.post(
+      "https://mern-todo-backend.vercel.app/api/todos",
+      body,
+      config
+    );
     console.log(res);
 
     dispatch({
@@ -26,7 +30,9 @@ export const addTodo = (title) => async (dispatch) => {
 
 export const getTodos = () => async (dispatch) => {
   try {
-    const res = await axios.get("/api/todos");
+    const res = await axios.get(
+      "https://mern-todo-backend.vercel.app/api/todos"
+    );
     console.log(res.data);
 
     dispatch({
@@ -40,7 +46,9 @@ export const getTodos = () => async (dispatch) => {
 
 export const changeStatus = (id) => async (dispatch) => {
   try {
-    const res = await axios.put(`/api/todos/${id}`);
+    const res = await axios.put(
+      `https://mern-todo-backend.vercel.app/api/todos/${id}`
+    );
     console.log(res);
 
     dispatch({
